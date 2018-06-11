@@ -4,23 +4,28 @@
 
 <head> <!--Opening Head Tag-->
 
-	<style>
+	<head> <!--Opening Head Tag-->
+
+		<style>
 	
-	* {
+			* {
     box-sizing: border-box;
 }
 
 /* Style the body */
 body {
     margin: 0;
-	font-family: Arial;
+font-family: Arial;
 }
 
 	
-		.header {
-    padding: 60px;
+.header {
+    padding: 80px;
     text-align: center;
-    background: #1abc9c;
+    background: #FFFFFF;
+    background-image: url("Cybertron1.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
     color: white;
 }
 
@@ -53,23 +58,27 @@ body {
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-    flex: 30%;
+    flex: 50%;
     background-color: #f1f1f1;
     padding: 20px;
 }
 
 /* Main column */
 .main {
-    flex: 70%;
+    flex: 50%;
     background-color: white;
     padding: 20px;
 }
 
 /* Fake image, just for this example */
-.fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
+
+img {
+	border-color: black;
+  border-width: 4px;
+  border-style: double;
+  border-radius: 10px;
+padding: 25px 25px 25px 25px;
+	
 }
 
 /* Footer */
@@ -84,31 +93,42 @@ body {
   flex-wrap: wrap;
 }
 
-		</style>
+.clearfix {
+    overflow: auto;
+}
+
+p,ol,ul,li {
+	font-family: 'Times New Roman';
+	}
+
+	</style>
 
 </head> <!--Closing Head Tag-->
 
 	<body> <!--Opening Body Tag-->
 
-		<div class = "header"> <!--The Pages Header-->
 		
-				<img src = "TransformersPageBanner.png"/> <!--Image That Acts As The Text Of The Page Banner-->
+		<div class = "header"> <!--The Pages Header-->
+	
+
+			<img style =  "border-style: none;" src = "TransformersPageBanner.png"/> <!--Image That Acts As The Text Of The Page Banner-->
+
 				
 		</div>		
 	
 		<div class="navbar"> <!--The Navigation Bar Towards The Top Of The Page-->
 		
-			  <a href = "#" style = "flex-grow: 1"> Origins </a> <!--The First Item: Home Page/Origins-->
+			  <a href = "index.html" style = "flex-grow: 1"> Origins </a> <!--The First Item: Home Page/Origins-->
 			  
-			  <a href = "#" style = "flex-grow: 1"> Factions </a> <!--The Second Item: Factions-->
+			  <a href = "Factions.html" style = "flex-grow: 1"> Factions </a> <!--The Second Item: Factions-->
 			  
-			  <a href "#" style = "flex-grow: 1"> Characters </a> <!--The Third Item: Characters-->
+			  <a href = "Characters.html" style = "flex-grow: 1"> Characters </a> <!--The Third Item: Characters-->
 			  
 			  <a href = "#" style = "flex-grow: 1"> Toys </a> <!--The Fourth Item: Toys-->
 			  
 			  <a href = "#" style = "flex-grow: 1"> Comics </a> <!--The Fith Item: Comics-->
 			  
-			  <a href = "#" style = "flex-grow: 1"> Media </a> <!--The Sixth Item: Media-->
+			  <a href = "Media.html" style = "flex-grow: 1"> Media </a> <!--The Sixth Item: Media-->
 			  
 			  <a href = "#" style = "flex-grow: 1"> Citations </a> <!--The Seventh Item: Citations-->
 			  
@@ -175,6 +195,8 @@ body {
 		
 				<!--A Compendium Of All Of The Microchange Toys That Were Then Reused In The Transformers Line-->
 				
+				<!--Possibly Add A Bit Of JavaScript Here That Allows You To Just Cycle Through All Of The Various Toys That Were Released Under The Various Toylines [Most Likely To Be Used For The Toy Page As Well As The Above Section]-->
+				
 				<div class = "flex-container"> <!--Flex-Container For All Images Related To The Toys-->
 					
 						<ol style = "font-family: 'Times New Roman'">  <!--Ordered List With A Font Of Times New Roman-->
@@ -182,7 +204,7 @@ body {
 							<div> 
 							
 								<li> The Cassettes </li> <!--Soundwave's Minions-->
-								
+								<img style = "clear: right" src = "Microchange Cassettes 1.jpg"/>
 									<ul> <!--Opening Tag For Unordered List-->
 										
 										<li> Frenzy </li>
@@ -193,6 +215,8 @@ body {
 										
 										<li> Laserbeak </li>
 										
+										
+
 									</ul> <!--Closing Tag For Unordered List-->
 							
 							</div>
@@ -256,4 +280,3 @@ body {
 
 
 </html> <!--Closing HTML Tag-->
-
