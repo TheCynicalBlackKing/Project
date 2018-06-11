@@ -1,0 +1,276 @@
+<!doctype HTML> <!--Declaring The Document Type As HMTL-->
+
+<html> <!--Opening HTML Tag-->
+
+	<head> <!--Opening Head Tag-->
+
+		<style>
+	
+			* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    margin: 0;
+font-family: Arial;
+}
+
+	
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #FFFFFF;
+    background-image: url("Cybertron1.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    color: white;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    display: flex;
+    background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 50%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {
+    flex: 50%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Fake image, just for this example */
+
+img {
+	border-color: black;
+  border-width: 4px;
+  border-style: double;
+  border-radius: 10px;
+padding: 25px 25px 25px 25px;
+	
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+p,ol,ul,li {
+	font-family: 'Times New Roman';
+	}
+
+
+		</style>
+	
+	</head> <!--Closing Head Tag-->
+
+	
+	<body> <!--Opening Body Tag-->
+
+	
+		<div class = "header"> <!--The Pages Header-->
+
+			<img style =  "border-style: none;" src = "TransformersPageBanner.png"/> <!--Image That Acts As The Text Of The Page Banner-->
+	
+		</div> <!--Closing Tag For Div Header-->		
+	
+			
+		<div class="navbar"> <!--The Navigation Bar Towards The Top Of The Page-->
+		
+			
+			<a href = "index.html" style = "flex-grow: 1"> Origins </a> <!--The First Item: Home Page/Origins-->
+			  
+			<a href = "Factions.html" style = "flex-grow: 1"> Factions </a> <!--The Second Item: Factions-->
+			  
+			<a href = "Characters.html" style = "flex-grow: 1"> Characters </a> <!--The Third Item: Characters-->
+			  
+			<a href = "#" style = "flex-grow: 1"> Toys </a> <!--The Fourth Item: Toys-->
+			  
+			<a href = "#" style = "flex-grow: 1"> Comics </a> <!--The Fith Item: Comics-->
+			  
+			<a href = "Media.html" style = "flex-grow: 1"> Media </a> <!--The Sixth Item: Media-->
+			  
+			<a href = "#" style = "flex-grow: 1"> Citations </a> <!--The Seventh Item: Citations-->
+			  
+		</div> <!--Closing Tag For Div Navigation Bar-->
+
+	
+		<div class = "main"> <!--Div Class That Contains The Main Content Of The Web Page-->
+
+
+			<h3> Characters </h3> <!--Heading For Factions-->
+
+				<p> Most Cybertronians can be grouped into three categories, neutral (taking neither side), Autobot (or either hero-like equivalent in the series), or Decepticons (or other villain-like equivalent in the series). Although there is not much that differs between the three groups other than ideology, it is not uncommon for a Transformer to change sides, or to take a vow of neutrality. The few things that set apart the various groups tend to be their alternate modes (although this may not always be the case, but each faction tends to share a common theme), what their goals are (protect, destry, etc). </p>
+		
+		</div> <!--Closing Tag For Div Main-->	
+	
+		
+		<div class="row"> <!--Division Between Two Sides Of The Page: Autobots-->
+		
+			<div class="side"> <!--Div Class Side-->
+      			
+				<h3> Autobots </h3> <!--Autobots Heading-->
+				
+				<div class = "clearfix" <!--style = " border-color: black; border-width: 4px; border-style: double; border-radius: 4px;"-->
+					
+					<p> The following lists contain a number of notable the Autobots that appeared in the original Transformers cartoon that aired in the 1980's, and are grouped by season, but are not listed in any particular order. </p>
+
+					<h4> Season One: </h4>	
+					
+						<ol>
+					
+							<li> Optimus Prime </li>
+
+							<li> Bluestreak </li>
+
+							<li> Brawn </li>
+
+							<li> Bumblebee </li>
+
+							<li> Cliffjumper</li>
+
+							<li> Ironhide </li>
+
+							<li> Jazz </li>
+
+							<li> Mirage </li>
+
+							<li> Prowl </li>
+
+							<li> Ratchet </li>
+
+							<li> Sideswipe </li>
+
+							<li> Wheeljack </li>
+
+						</ol>				
+
+					<h4> Movie: </h4>
+			
+						<ol>
+
+							<li> Hot Rod</li>
+							
+							<li> Rodimus Prime</li>
+
+							<li> Springer </li>
+
+							<li> Kup </li>
+
+							<li> Ultra Magnus </li>
+
+							<li> Blurr </li>
+
+							<li> Arcee </li>
+
+							<li> Wheelie </li>
+						
+						</ol>
+					
+								
+				</div>
+							
+  			</div>
+ 
+		 	
+			<div class="main">
+
+				<h3> Decepticons </h3>	
+
+				<div class = "clearfix" <!--style = " border-color: black; border-width: 4px; border-style: double; border-radius: 4px;"-->
+					
+					<p> The following contains a number of notable Decepticons from the original series grouped by season, but are not listed in any particular order. </p>
+						
+					<h4> Season One: </h4>	
+					
+						<ol>
+					
+							<li> Megatron </li>
+
+							<li> Shockwave </li>
+
+							<li> Soundwave </li>
+
+							<li> Skywarp </li>
+
+							<li> Starscream </li>
+
+							<li> Thundercracker </li>
+
+							<li> Reflector </li>	
+
+						</ol>				
+
+					<h4> Movie: </h4>
+			
+						<ol>
+
+							<li> Galvatron </li>
+							
+							<li> Cyclonus </li>
+					
+							<li> Scrouge </li>
+
+							<li> Sweeps </li>
+
+							<li> Ultra Magnus </li>
+
+							<li> Blurr </li>
+
+							<li> Arcee </li>
+
+							<li> Wheelie </li>
+						
+						</ol>
+		
+				</div>	
+
+			</div>
+			
+		</div>
+		
+
+	</body> <!--Closing Body Tag-->
+
+</html> <!--Closing HTML Tag-->
+
