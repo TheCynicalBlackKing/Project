@@ -4,7 +4,7 @@
 
 	<head> <!--Opening Head Tag-->
 
-			<style> <!--Opening Style Tag-->
+		<style>
 	
 			* {
 				box-sizing: border-box;
@@ -12,92 +12,115 @@
 
 			/* Style the body */
 			body {
-					margin: 0;
-					font-family: Arial;
-				 }
+				margin: 0;
+			font-family: Arial;
+			}
 
-					
+				
 			.header {
-						padding: 80px;
-						text-align: center;
-						background: #FFFFFF;
-						background-image: url("Cybertron1.jpg");
-						background-repeat: no-repeat;
-						background-position: top center;
-						color: white;
-					}
+				padding: 80px;
+				text-align: center;
+				background: #FFFFFF;
+				background-image: url("Cybertron1.jpg");
+				background-repeat: no-repeat;
+				background-position: top center;
+				color: white;
+			}
 
 			/* Style the top navigation bar */
 			.navbar {
-						display: flex;
-						background-color: #333;
-					}
+				display: flex;
+				background-color: #333;
+			}
 
 			/* Style the navigation bar links */
 			.navbar a {
-						color: white;
-						padding: 14px 20px;
-						text-decoration: none;
-						text-align: center;
-					  }
+				color: white;
+				padding: 14px 20px;
+				text-decoration: none;
+				text-align: center;
+			}
 
 			/* Change color on hover */
 			.navbar a:hover {
-								background-color: #ddd;
-								color: black;
-							}
+				background-color: #ddd;
+				color: black;
+			}
 
-				/* Column container */
-			.row {  
-					display: flex;
-					flex-wrap: wrap;
-				 }
 
-				/* Create two unequal columns that sits next to each other */
-				/* Sidebar/left column */
-				.side {
+			.row {
+				display: flex;
+				flex-wrap: wrap;
+				padding: 0 4px;
+			}
+
+			/* Create four equal columns that sits next to each other */
+			.column {
+				flex: 25%;
+				max-width: 25%;
+				padding: 0 4px;
+			}
+
+			.column img {
+				margin-top: 8px;
+				vertical-align: middle;
+			}
+
+			/* Responsive layout - makes a two column-layout instead of four columns */
+			@media (max-width: 800px) {
+				.column {
 					flex: 50%;
-					background-color: #f1f1f1;
-					padding: 20px;
+					max-width: 50%;
+				}
+			}
+
+			/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+			@media (max-width: 600px) {
+				.column {
+					flex: 100%;
+					max-width: 100%;
+				}
+			}
+			}
+
+			/* Create two unequal columns that sits next to each other */
+			/* Sidebar/left column */
+			.side {
+				flex: 50%;
+				background-color: #f1f1f1;
+				padding: 20px;
+			}
+
+			/* Main column */
+			.main {
+				flex: 50%;
+				background-color: white;
+				padding: 20px;
+			}
+
+
+
+			/* Footer */
+			.footer {
+				padding: 20px;
+				text-align: center;
+				background: #ddd;
+			}
+
+			.flex-container {
+			  display: flex;
+			  flex-wrap: wrap;
+			 justify-content: space-around:
+			}
+
+			.clearfix {
+				overflow: auto;
+			}
+
+			p,ol,ul,li {
+				font-family: 'Times New Roman';
 				}
 
-				/* Main column */
-				.main {
-					flex: 50%;
-					background-color: white;
-					padding: 20px;
-				}
-
-				/* Fake image, just for this example */
-
-				img {
-					border-color: black;
-				  border-width: 4px;
-				  border-style: double;
-				  border-radius: 10px;
-				padding: 25px 25px 25px 25px;
-					
-				}
-
-				/* Footer */
-				.footer {
-					padding: 20px;
-					text-align: center;
-					background: #ddd;
-				}
-
-				.flex-container {
-				  display: flex;
-				  flex-wrap: wrap;
-				}
-
-				.clearfix {
-					overflow: auto;
-				}
-
-				p,ol,ul,li {
-					font-family: 'Times New Roman';
-					}
 
 		</style> <!--Closing Style Tag-->
 	
@@ -168,7 +191,152 @@
 
 			 <p> The basic upshot... Hasbro simply marketed the line better in virtually every regard, and sold kids on the idea that these weren't just robot toys, they were characters... that these plastic doodads were, well, more than meets the eye. </p>
 		
+			<h3> Original Toys </h3> <!--Heading: Original Transformers Toys-->
+		
 		</div> <!--Closing Tag For Div Main-->	
+	
+		
+		<div class="row"> <!--Division Between Two Sides Of The Page: Autobots-->
+
+
+			<div class="column"> <!--Opening Tag: Div Class-Column-->
+   				
+
+				<img src = "G1 Optimus Prime Toy.jpg" style="width:100%"> <!--Image: G1 Prime Toy-->
+				
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Optimus Prime Toy by Fumihiko Akiyama from Cliffbee.com CC-BY </p> <!--Credit For Toy Picture-->
+    
+
+				<img src = "G1 Bumblebee Toy.jpg" style="width:100%"> <!--Image: G1 Bumblebee Toy-->
+    
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Bumblebee Toy by Chris Freely from Seibertron.com CC-BY </p> <!--Credit For Toy Picture-->
+
+					
+				<img src= "G1 Cliffjumper Toy.jpg" style="width:100%"> <!--Image: G1 Cliffjumper Toy-->
+    
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Cliffjumper Toy by Chris Freely from Cliffbee.com CC-BY </p> <!--Credit For Toy Picture-->
+
+					
+				<img src= "G1 Ironhide Toy.jpg" style="width:100%"> <!--Image: G1 Ironhide Toy-->
+		
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Ironhide Toy by Fumihiko Akiyama from Cliffbee.com CC-BY </p> <!--Credit For Toy Picture-->
+
+						
+				<img src= "G1 Jazz Toy.jpg" style="width:100%"> <!--Image: G1 Jazz Toy-->
+				
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Jazz  Toy from Hasbro CC-BY </p> <!--Credit For Toy Picture-->
+    
+
+				<img src= "G1 Mirage Toy.jpg" style="width:100%">  <!--Image: G1 Mirage Toy-->
+    
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Mirage Toy by Chris Freely from Hasbro CC-BY </p> <!--Credit For Toy Picture-->
+	
+				<img src= "G1 Prowl Toy.jpg" style="width:100%"> <!--Image: G1 Prowl Toy-->
+
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Prowl Toy by Fumihiko Akiyama from Cliffbee.com CC-BY </p> <!--Credit For Toy Picture-->
+
+				<img src = "G1 Ratchet Toy.jpg" style="width:100%"> <!--Image: G1 Ratchet Toy-->
+			
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Ratchet Toy by Fumihiko Akiyama from Cliffbee.com CC-BY </p> <!--Credit For Toy Picture-->
+
+			</div> <!--Closing Tag: Div Class Column-->
+
+
+			<div class="column"> <!--Opening Tag: Div Class-Column-->
+   				
+    
+				<img src = "G1 Sideswipe Toy.jpg" style="width:100%"> <!--Image: G1 Sideswipe Toy-->
+    
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Sideswipe Toy by Fumihiko Akiyama from Cliffbee.com CC-BY </p> <!--Credit For Toy Picture-->
+
+				<img src= "G1 Wheeljack Toy.jpg" style="width:100%"> <!--Image: G1 Wheeljack Toy-->
+    
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Wheeljack Toy by Chris Freely from Hasbro CC-BY </p> <!--Credit For Toy Picture-->
+
+				<img src= "G1 Hot Rod Toy.jpg" style="width:100%"> <!--Image: G1 Hot Rod Toy-->
+
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Hot Rod Toy by Chris McFeely from Seibertron.com CC-BY </p> <!--Credit For Toy Picture-->
+				
+				<img src= "G1 Rodimus Prime Toy.jpg" style="width:100%"> <!--Image: G1 Rodimus Prime Toy-->
+    
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Rodimus Prime Toy by Fumihiko Akiyama from Cliffbee.com CC-BY </p> <!--Credit For Toy Picture-->
+
+				<img src= "G1 Springer Toy.jpg" style="width:100%">  <!--Image: G1 Springer Toy-->
+    
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Springer Toy by Fumihiko Akiyama from Cliffbee.com CC-BY </p> <!--Credit For Toy Picture-->
+	
+				<img src= "G1 Kup Toy.jpg" style="width:100%"> <!--Image: G1 Kup Toy Toy-->
+				
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Kup Toy by ItsWalky from tfwiki.net CC-BY </p> <!--Credit For Toy Picture-->
+
+
+			</div> <!--Closing Tag: Div Class Column-->
+			
+
+			<div class="column"> <!--Opening Tag: Div Class-Column-->
+   				
+
+				<img src = "G1 Ultra Magnus Toy.jpg" style="width:100%"> <!--Image: G1 Ultra Magnus Toy-->
+				
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Ultra Magnus Toy by ItsWalky from tfwiki.net CC-BY </p> <!--Credit For Toy Picture-->
+    
+
+				<img src = "G1 Blurr Toy.jpg" style="width:100%"> <!--Image: G1 Blurr Toy-->
+    
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Blurr Toy by Detour from Seibertron.com CC-BY </p> <!--Credit For Toy Picture-->
+
+				<img src= "G1 Wheelie Toy.jpg" style="width:100%"> <!--Image: G1 Wheelie Toy-->
+    
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Wheelie Toy from Seibertron.com CC-BY</p> <!--Credit For Toy Picture-->
+
+				<img src= "G1 Megatron Toy.jpg" style="width:100%"> <!--Image: G1 Megatron Toy-->
+	
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Megatron Toy by Jeysie from Seibertron.com CC-BY</p> <!--Credit For Toy Picture-->
+
+				<img src= "G1 Starscream Toy.jpg" style="width:100%"> <!--Image: G1 Starscream Prime Toy-->
+    
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Starscream Toy by Chris Freely from Hasbro CC-BY </p> <!--Credit For Toy Picture-->
+
+				<img src= "G1 Soundwave Toy.jpg" style="width:100%">  <!--Image: G1 Soundwave Toy-->
+		
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Starscream Toy by Fumihiko Akiyama from Cliffbee.com CC-BY </p> <!--Credit For Toy Picture-->
+
+			</div> <!--Closing Tag: Div Class Column-->
+
+
+			<div class="column"> <!--Opening Tag: Div Class-Column-->
+
+				<img src= "G1 Reflector Toy.jpg" style="width:100%"> <!--Image: G1 Reflector Toy Toy-->
+				
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Reflector Toy by Fumihiko Akiyama from Cliffbee.com CC-BY </p> <!--Credit For Toy Picture-->
+   			
+				<img src = "G1 Skywarp Toy.jpg" style="width:100%"> <!--Image: G1 Skywarp Toy-->
+    
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Skywarp Toy by Chris Freely from Hasbro CC-BY </p> <!--Credit For Toy Picture-->
+				
+				<img src = "G1 Thundercracker Toy.jpg" style="width:100%"> <!--Image: G1 Thundercracker Toy-->
+				
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Thundercracker Toy by Chris Freely from Hasbro CC-BY </p> <!--Credit For Toy Picture-->
+    
+				<img src= "G1 Shockwave Toy.jpg" style="width:100%"> <!--Image: G1 Shockwave Toy-->
+				
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Shockwave Toy from Seibertron.com CC-BY </p> <!--Credit For Toy Picture-->
+    
+				<img src= "G1 Galvatron Toy.jpg" style="width:100%"> <!--Image: G1 Galvatron Toy-->
+				
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Galvatron Toy from Fumihiko Akiyama from Cliffbee.com CC-BY </p> <!--Credit For Toy Picture-->
+
+				<img src= "G1 Cyclonus Toy.jpg" style="width:100%"> <!--Image: G1 Cyclonus Toy-->
+				
+					<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Cyclonus Toy from Seibertron.com CC-BY </p> <!--Credit For Toy Picture-->
+    
+				<img src= "G1 Scrouge Toy.jpg" style="width:100%">  <!--Image: G1 Scrouge Toy-->
+				
+							<p style = "line-height: 0.8; font-style: italic; font-size: 10px;"> Cyclonus Toy by Escargon from Seibertron.com CC-BY </p> <!--Credit For Toy Picture-->
+   
+			</div> <!--Closing Tag: Div Class Column-->
+
+		</div> <!--Closing Tag: Dav Class Row-->
 
 	</body> <!--Closing Body Tag-->
 
